@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  top: 30%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  font-size: 18px;
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background: #4CAF50;
+  color: white;
+}
+
+#noBtn {
+  background: #ff4d4d;
+  color: white;
+}
+
+#response {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Floating hearts */
+.hearts::before {
+  content: "❤️ 💕 💖 💘 💝";
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  animation: float 6s infinite linear;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(100vh); }
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
